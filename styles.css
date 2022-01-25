@@ -1,0 +1,344 @@
+body{
+	margin: 0;
+	padding: 0;
+	min-width: 400px;
+	font-family: 'Lato', sans-serif;
+
+}
+.text_w{
+	font-size: 20px;
+	text-align: left;
+	color: lavenderblush;
+}
+.text_b{
+	font-size: 20px;
+	text-align: left;
+	color: rgb(24, 24, 24);
+}
+.block{
+	display: flex;
+}
+.button{
+	display: flex;
+	justify-content: center;
+
+	width: 170px;
+	height: 40px;
+	background-color: lavenderblush;
+	border-radius: 15px;
+}
+
+header {
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	height: 5vh;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	box-shadow: -2px 1px 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.logo {
+	width: 10%;
+}
+.logo > img{
+	height: 5vh;
+}
+.menu {
+	width: 600px;
+	display: flex;
+	flex-direction: row;
+	margin: auto 50px;
+
+	font-weight: 500;
+	font-size: 2vh; 
+	text-align: left;
+}
+.menu_button {
+	margin: auto;
+}
+/* .main {
+}
+.about {
+}
+.examples {
+}
+.contacts {
+}
+.order {
+}
+.content {
+} */
+
+.main_block{
+	height: 90vh;
+	background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85) ), url(img/Background.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size:  cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: 0 0;
+	display: flex;
+	flex-direction: column;
+	padding-top: 5%;
+	padding-left: 10%;
+}
+.main_block-logo {
+	width: 25%;
+}
+.main_block-logo > img{
+	width: 100%;
+}
+.main_text{
+	width: 50%;
+	padding-left: 2%;
+	margin-bottom: 10vh;
+}
+.main_buttons{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 30%;
+}
+.main_button{
+	margin-bottom: 3vh;
+	margin-left: 2%;
+	background-color: lavenderblush;
+}
+.main_button > p{
+	margin: auto;
+}
+.arrow{
+	margin: 10% auto;
+	width: 10%;
+}
+.arrow > img{
+	width: 100%;
+}
+
+.about_block{
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 5% 10% 5% 10%;
+	padding-right: calc(10%+15vh);
+}
+.about_img{	
+	height: 80vh;
+}	
+.about_img > img{
+	height: 100%;
+}
+.about_text{
+	margin-left: 5vh;
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.about_button{
+
+	margin-bottom: 3vh;
+	background-color: rgb(41, 41, 41);
+}
+.about_button > p{
+	margin: auto;
+	font-size: 30px;
+	font-weight: 600;
+	color: lavenderblush;
+}
+#ABOUT{
+	font-size: 6vh;
+	font-weight: 900;
+}
+
+.example_block{
+	background-color: rgb(56, 56, 56);
+}
+.example_grid{
+	margin: auto;
+	padding: 20vh 0vh 10vh 0vh;
+	width: 70%;
+	height: 65vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.example_row{
+	height: 40vh;
+	margin-bottom: 3vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.example_text{
+	width: 33%;
+	padding: 0vh 3vh 0vh 3vh;
+	box-sizing: border-box;
+}
+.example_img{
+	width: 33%;
+	display: flex;
+	justify-content: center;
+}
+.example_img > img{
+	height: 90%;
+}
+.example_button > p{
+	margin: auto;
+	font-size: 30px;
+	font-weight: 600;
+	color: rgb(63, 63, 63);
+}
+#EXAMPLE{
+	margin: 0;
+	color: lavenderblush;
+	font-size: 6vh;
+	font-weight: 900;
+}
+
+.contacts_block {
+	height: 60vh;
+	padding-top: 10vh;
+	display: flex;
+	flex-direction: column;
+}
+.contact_grid {
+	padding: 10vh 25vh 5vh 25vh;	
+	height: 55vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.contact_row {	
+	margin: auto;
+	width: 80%;
+	height: 10vh;
+	margin-bottom: 3vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.contact_img {
+	display: flex;
+	width: 33%;
+}
+.contact_img > img{
+	margin: auto;
+	height: 95%;
+}
+.contact_text {
+	display: flex;
+	width: 33%;
+}
+.contact_text > p{
+	margin: auto;
+}
+#CONTACTS{
+	margin: auto;
+	font-size: 6vh;
+	font-weight: 900;
+}
+
+@media screen and (max-width: 1400px){
+	#EXAMPLE{
+		font-size: 4vh;
+	}
+}
+
+@media screen and (max-width: 1250px){
+	.main_block{
+		padding: 0;
+	}
+	.main_block-logo {
+		margin: auto;
+	}
+	.main_text{
+		margin: auto;
+		text-align: center;
+	}
+	.main_buttons{
+		margin: auto;
+	}
+
+	.about_block{
+		flex-direction: column;
+		align-items: center;
+	}
+	.about_img{
+		height: 40vh;
+	}
+	.example_text{
+		width: 50%;
+	}
+	#EX_TR{
+		display: none;
+	}
+	#EX_DR{
+		display: none;
+	}
+
+	.contact_grid{
+		padding: 5vh 2vw 5vh 2vw;
+	}
+	.about_button{
+		height: 40px;
+	}
+}
+
+@media screen and (max-width: 780px){
+	
+	.about_button{
+		height: 30px;
+	}
+	.example_grid{
+		padding-top: 5vh;
+		padding-bottom:  15vh;
+		height: 50vh;
+	}
+	#EX_TM{
+		display: none;
+	}
+	#EX_DM{
+		display: none;
+	}
+	#EX_DL{
+		display: none;
+	}
+	.example_text{
+		margin: auto;
+		width: 80%;
+	}
+	#CONTACTS{
+		font-size: 4vh;
+	}
+
+	#FACE{
+		display: none;
+	}
+	#MAIL{
+		display: none;
+	}
+
+	#TELEGA{
+		display: none;
+	}
+
+	#INST{
+		display: none;
+	}
+	#PHONE{
+		display: none;
+	}
+	.contact_text{
+		width: 70%;
+	}
+	.contact_img{
+		margin: auto 0 auto 0;
+		height: 50%;
+		width: 50%;
+	}
+	.contact_row{
+		margin: auto 0 auto 0;
+	}
+}
